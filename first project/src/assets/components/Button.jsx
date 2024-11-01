@@ -1,8 +1,17 @@
+import PropTypes from 'prop-types';
 
-const Button = () => {
+const Button = ({fontSize, bgColor,drobShedow, textColor, rounded, paddings, text}) => {
   return (
-    <button className="bg-[#FF52C1] text-white text-[20px] font-bold leading-[30px] font-open-sans w-[400px] h-[80px] flex-shrink-0  filter drop-shadow-lg rounded-[40px]">Get Started For Free</button>
+    <button className= {`${bgColor, textColor, fontSize, drobShedow, rounded, paddings} font-open-sans  flex-shrink-0  filter`}>{text}</button>
   )
 }
-
+Button.propTypes = {
+  fontSize: PropTypes.string.isRequired,
+  bgColor: PropTypes.string.isRequired,
+  drobShedow: PropTypes.string.isRequired,
+  textColor: PropTypes.string.isRequired,
+  rounded: PropTypes.string.isRequired,
+  paddings: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+}
 export default Button

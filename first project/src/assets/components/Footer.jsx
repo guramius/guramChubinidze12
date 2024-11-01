@@ -3,9 +3,7 @@ import footerBg from "./img/footerBg.png"
 const Footer = () => {
   return (
     <div className="flex items-end h-screen-dynamic bg-cover " style={{ backgroundImage: `url(${footerBg})` }}>
-
-    
-        <div className="flex justify-around w-[100%] mb-60px" >
+        <div className="flex justify-around w-[100%] mb-[60px]" >
             <div>
                 <img src={transparent} alt="logo" />
                 <p className="text-white w-[340px] mt-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
