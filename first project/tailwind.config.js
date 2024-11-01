@@ -8,8 +8,20 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      height: {
+        'screen-720': 'min(100vh, 720px)', 
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.h-screen-dynamic': {
+          height: 'min(100vh, 720px)',
+        },
+      });
+    },
+
+  ],
 }
 
