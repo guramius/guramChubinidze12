@@ -13,7 +13,7 @@ const AbautUs = () => {
             text= "Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form. "
             bg={background}
             image={growThogether}
-            position="absolute -z-10 top-[-100px] left-0"
+            position="absolute -z-10 top-[-100px] left-0 lg-custom:top-[8px]"
         />
         <AboutProps 
             header="Flowing Conversations"
@@ -27,7 +27,7 @@ const AbautUs = () => {
             text= "It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately. "
             bg={background}
             image={growOld}
-            position="absolute -z-10 top-[-230px] left-0"
+            position="absolute -z-10 top-[-230px] left-0 lg-custom:top-[8px]"
         />
     </>
   )

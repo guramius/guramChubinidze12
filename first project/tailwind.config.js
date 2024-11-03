@@ -11,6 +11,10 @@ export default {
       height: {
         'screen-720': 'min(100vh, 720px)', 
       },
+      screens: {
+        'lg-custom': '270px',  
+        'xl-custom': '680px', 
+      },
     },
   },
   plugins: [

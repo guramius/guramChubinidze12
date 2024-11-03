@@ -3,8 +3,8 @@ import logo from "../components/img/transparent.png"
 
 const Header = () => {
   return (
-    <div className="flex justify-between pt-[79px] pr-[63px] pb-[200px] pl-[80px]">
-        <img src={logo} alt="" />
+    <div className="flex justify-between pt-[79px] pr-[63px] pb-[200px] pl-[80px]  lg-custom:pt-[24px] lg-custom:pr-[24px] lg-custom:pb-[24px] lg-custom:pl-[24px]">
+        <img src={logo} alt="" /> 
         <Button
           fontSize="text-base"
           text="Try It Free"
