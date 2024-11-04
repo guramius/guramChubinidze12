@@ -8,7 +8,7 @@ const AboutProps = ({header, text, image, flexDirection, bg, position, marginTb 
         <h1 className="text-[#00252E] font-poppins lg:text-[40px] font-bold leading-[60px] md:text-[28px] sm:text-[20px]">{header}</h1>
         <p  className="text-custom-dark font-open-sans lg:text-[16px] font-normal leading-[24px]  lg:w-[520px] xl-custom:w-[400px] lg-custom:w-[320px] lg-custom:text-[14px]">{text}</p>
       </div>
-      <img className="lg-custom:w-[60%]" src={image} alt="wtf" />
+      <img className="lg:w-[517px] lg-custom:w-[267px]" src={image} alt="wtf" />
     </div>
   )
 }
