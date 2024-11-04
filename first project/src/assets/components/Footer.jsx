@@ -4,7 +4,8 @@ import footerBg from "./img/footerBg.png"
 const Footer = () => {
   return (
     <div className="flex items-end h-screen-dynamic bg-cover " style={{ backgroundImage: `url(${footerBg})` }}>
-        <div className="flex justify-around w-[100%] mb-[60px]" >
+        <div className="flex flex-col items-end sm:flex-row sm:justify-around w-full mb-[60px] lg-custom:flex-col-reverse lg-custom:items-center" >
+                        {/* flex items-center sm:flex-row sm:justify-around  lg-custom:flex-col lg-custom:items-end */}
             <div>
                 <img src={transparent} alt="logo" />
                 <p className="text-white w-[340px] mt-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
@@ -57,9 +58,11 @@ const Footer = () => {
             <div>
                 <h4 className="text-white text-xl">NEWSLETTER</h4>
                 <p  className="text-white w-[344px] my-4 mb-10">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
-                <div>
+                <div className="lg:flex items-center  lg-custom:flex-col lg-custom:items-end">
                     <input type="text" className="w-[320px] h-[48px] flex-shrink-0 rounded-[6px] bg-white outline-none" />
-                    <button className="transition-all duration-300 ease-in-out hover:bg-[#FF8ED7] ml-10 px-10 py-3 flex-shrink-0 rounded-[5px] bg-[#FF52C1] text-white font-[Open_Sans] text-[16px] fontBold leading-[24px] ">submit</button>
+                    <div>
+                        <button className="transition-all duration-300 ease-in-out hover:bg-[#FF8ED7] ml-10 px-10 py-3 flex-shrink-0 rounded-[5px] bg-[#FF52C1] text-white font-[Open_Sans] text-[16px] fontBold leading-[24px] ">submit</button>
+                    </div>
                 </div>
             </div>
         </div>

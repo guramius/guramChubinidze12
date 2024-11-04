@@ -9,7 +9,7 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
       },
       height: {
-        'screen-720': 'min(100vh, 720px)', 
+        'screen-720': 'min( 720px)', 
       },
       screens: {
         'lg-custom': '270px',  
@@ -21,7 +21,7 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         '.h-screen-dynamic': {
-          height: 'min(100vh, 720px)',
+          height: 'min( 720px)',
         },
       });
     },
